@@ -5,7 +5,7 @@ Builds a web-based GUI using Java and Vaadin, which runs on top of a (local) ins
  - Menu resizes horizontally based on the contents.
 
 ## Requirements
-<img src="astra_apparel_UI.png" width="300" align=right />
+<img src="astra_apparel_ui.png" width="300" align=right />
 
  - Java 21 (JRE)
  - Environment variables
