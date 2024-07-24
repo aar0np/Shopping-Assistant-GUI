@@ -1,11 +1,11 @@
-# DSAlbums
-An implementation of the Java client for the Data API, using a dataset of music albums. This is a companion repository for the "[Using the Data API on HCD](https://www.youtube.com/watch?v=LbcsVfm4A-k)" video on the [DataStax Developers](https://www.youtube.com/@DataStaxDevs) YouTube channel.
+# Shopping Assistant GUI
+Builds a web-based GUI using Java and Vaadin, which runs on top of a (local) installation of Langflow. It interacts with the chat flow submitting questions and returning responses via an underlying HTTP POST.
 
 ## Known issues
  - Menu resizes horizontally based on the contents.
 
 ## Requirements
-<img src="dsalbums.png" width="300" align=right />
+<img src="astra_apparel_UI.png" width="300" align=right />
 
  - Java 21 (JRE)
  - Environment variables
