@@ -20,8 +20,9 @@ import com.vaadin.flow.server.StreamResource;
 public class ShoppingAssistantMainView extends VerticalLayout {
 
 	private static final long serialVersionUID = 6488265013567165582L;
-    private String USER_AVATAR = "https://api.dicebear.com/6.x/big-ears-neutral/svg?seed=Molly";
-    private String AI_AVATAR = "https://api.dicebear.com/6.x/bottts/svg?seed=Sheba";
+    private static final String USER_AVATAR = "https://api.dicebear.com/6.x/big-ears-neutral/svg?seed=Molly";
+    private static final String AI_AVATAR = "https://api.dicebear.com/6.x/bottts/svg?seed=Sheba";
+    private static final String LOGO_FILE = "astra_apparel_border_sm.png";
     
 	private ShoppingAssistantController controller;
 	private MessageList chat;
@@ -53,11 +54,11 @@ public class ShoppingAssistantMainView extends VerticalLayout {
 		HorizontalLayout layout = new HorizontalLayout();
 		
 		Image mcImage = new Image();
-		StreamResource imageResource = new StreamResource("astra_apparel_no_border.png",
-				() -> getClass().getResourceAsStream("/images/astra_apparel_no_border.png"));
+		StreamResource imageResource = new StreamResource(LOGO_FILE,
+				() -> getClass().getResourceAsStream("/images/" + LOGO_FILE));
 		
 		mcImage.setSrc(imageResource);
-		mcImage.setWidth("500px");
+		mcImage.setWidth("300px");
 		
 		layout.add(mcImage);
 		

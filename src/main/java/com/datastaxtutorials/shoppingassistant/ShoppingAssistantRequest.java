@@ -1,13 +1,13 @@
 package com.datastaxtutorials.shoppingassistant;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 
 public class ShoppingAssistantRequest {
-	@JsonProperty("input_value")
+	@SerializedName("input_value")
 	private String inputValue;
-	@JsonProperty("output_type")
+	@SerializedName("output_type")
 	private String outputType;
-	@JsonProperty("input_type")
+	@SerializedName("input_type")
 	private String inputType;
 	
 	public ShoppingAssistantRequest(String message) {
