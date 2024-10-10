@@ -14,4 +14,5 @@ ADD https://raw.githubusercontent.com/aar0np/Shopping-Assistant-GUI/refs/heads/m
 # open port for http endpoint
 EXPOSE 9090
 
-RUN java -jar shoppingassistant.jar
+#RUN java -jar shoppingassistant.jar
+ENTRYPOINT java -jar shoppingassistant.jar
