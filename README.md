@@ -9,7 +9,8 @@ Builds a web-based GUI using Java and Vaadin, which runs on top of a (local) ins
 
  - Java 21 (JRE)
  - Environment variables
-     - `LANGFLOW_URL`
+     - `ASTRA_LANGFLOW_URL`
+     - `BEARER_TOKEN`
  - A vector database which supports the Cassandra binary protocol:
     - Astra DB
     - DSE 6.9
@@ -30,7 +31,7 @@ The [pom.xml](pom.xml) file can be adjusted to build with earlier versions of Ja
 
 ### Build command
 
-    mvn clean install
+    mvn package -Pproduction
 
 ### Running the build
 
